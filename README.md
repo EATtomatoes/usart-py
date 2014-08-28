@@ -48,6 +48,8 @@ usart-py 封装了USART的所有命令，调用方式为 *USART.* 命令的小�
 
 *注意修改main.py文件中的 tty 变量，填写你系统上的TTL设备的路径 如 /dev/ttyS0*
 
+*根据屏幕的分辨率修改USART.py文件中的 width和high两个变量的值。默认为 220 和 175*
+
 <pre>
 
 在终端下，运行
