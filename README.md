@@ -22,6 +22,7 @@ usart-py
 
 作为库使用：
 
+<code>
 import USART
 
 USART.connet("/dev/ttyS0",115200)  # 建立连接
@@ -29,7 +30,7 @@ USART.cls(2)                       # 进行各种操作
 ...
 USART.ser.close() # 关闭
 
-
+</code>
 
 
  usart 封装了USART的所有命令，调用方式为 USART.命令的小写形式。
