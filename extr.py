@@ -1,5 +1,6 @@
 #!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
+# jarod.py@gmail.com
 
 
 import subprocess
@@ -38,8 +39,11 @@ def getinfo():
 
         return tmp2
     elif sys.platform == 'linux2':
-        pass
-
+        tmp = subprocess.check_output(["top","-b","-n 1","-d 2"])
+        tmp = tmp.rstrip()
+        tmp = tmp.split("\n")
+        tmp2 = ['system: linux',tmp[0],tmp[1],tmp[2],tmp[3],tmp[4]]
+        return tmp2
 
 def pushinfo(size=12):
         global us

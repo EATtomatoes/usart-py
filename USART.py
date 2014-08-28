@@ -1,5 +1,6 @@
 #!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
+# jarod.py@gmail.com
 
 import serial ,sys
 
@@ -66,6 +67,18 @@ def widthDS16(strings):
 
 def lineDS12(strings):
     lines =  len(strings) * 6 / width  #英文用6，汉字用12
+
+    #print lines
+
+    if ((len(strings) * 12 )% width > 0):
+        lines = lines + 1
+
+    #print lines
+    return lines
+
+
+def lineDS12W(strings):
+    lines =  len(strings) * 12 / width  #英文用6，汉字用12
 
     #print lines
 
