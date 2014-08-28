@@ -46,7 +46,7 @@ usart-py 封装了USART的所有命令，调用方式为 *USART.* 命令的小�
 
 # 直接调用
 
-* 注意修改main.py文件中的 tty 变量，填写你系统上的TTL设备的路径 如 /dev/ttyS0*
+*注意修改main.py文件中的 tty 变量，填写你系统上的TTL设备的路径 如 /dev/ttyS0*
 
 <pre>
 
